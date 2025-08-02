@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="/expence_calculator/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+    <div class="form">
+      <input type="number" id="pieces" placeholder="No. of pieces" min="1" />
+      <input type="number" id="pricePerPiece" placeholder="Price per piece" min="0" />
+      <button onclick="addExpense()">Add Expense</button>
+      <button onclick="clearAllExpenses()" class="clear">Clear All History</button>
+    </div>
+
+    <h2>Expense List</h2>
+    <ul id="expenseList"></ul>
+
+    <div class="totals">
+      <h3>Today's Expense: ₹<span id="dailyTotal">0</span></h3>
+      <h3>Monthly Expense: ₹<span id="monthlyTotal">0</span></h3>
+    </div>
+  </div>
+
+  <script src="/expence_calculator/js/script.js"></script>
+</body>
+</html>
